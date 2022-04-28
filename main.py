@@ -28,7 +28,29 @@ This Python method contains the application of the Game.
               All rights are reserved. Reproduction in whole or in part is
               prohibited without the written consent of the copyright owner.
 """
+import csv
+from kaggle_pokemon import *
+archivo = "Pokemon.csv"
+archivo1 = "coach_1_pokemons.csv"
+archivo2 = "coach_1_pokemons.csv"
 
+with open(file=archivo, mode="r") as f:
+    reader = csv.reader(f)
+    #  1era fila.
+    for row in reader:
+      print(row)
+
+with open(file=archivo1, mode="r") as f:
+    reader = csv.reader(f)
+    #  1era fila.
+    for row in reader:
+      print("coach1:",row)
+
+with open(file=archivo2, mode="r") as f:
+  reader = csv.reader(f)
+  #  1era fila.
+  for row in reader:
+    print("coach2:",row)
 
 # Source packages.
 
