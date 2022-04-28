@@ -1,6 +1,19 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+import csv
+archivo = "pokemon.csv"
 
+l1=[]
+l2=[]
+with open(file=archivo, mode="r") as f:
+    reader = csv.reader(f)
+    #  1era fila.
+    for row in reader:
+        l1.append(row[0])
+        l2.append(row[1])
+print(l1)
+print(l2)
+   
 
 """
 This Python module contains not only the class Pokemon, but also the test of
